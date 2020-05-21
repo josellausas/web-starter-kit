@@ -9,6 +9,8 @@ Uses technologies like
 - React
 - Babel
 - Express
+- webpack
+- Typescript
 
 ## Resources
 - Pluralsight class "Building a JavaScript Development Environment"
