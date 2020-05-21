@@ -7,10 +7,24 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node buildScripts/srcServer.js"
+  },
+  "quokka": {
+    "babel": {
+      "ts": true,
+      "plugins": [
+        "@babel/plugin-transform-typescript",
+        "jsdom-quokka-plugin"
+      ]
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/plugin-transform-typescript": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
     "babel-cli": "^6.26.0",
@@ -18,6 +32,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "canvas": "^2.6.1",
     "chai": "^4.2.0",
     "chalk": "^4.0.0",
     "cheerio": "^1.0.0-rc.3",
@@ -28,6 +43,7 @@
     "express": "^4.17.1",
     "html-webpack-plugin": "^4.3.0",
     "jsdom": "^16.2.2",
+    "jsdom-quokka-plugin": "^1.0.15",
     "localtunnel": "^2.0.0",
     "mocha": "^7.1.2",
     "nock": "^12.0.3",
@@ -39,5 +55,6 @@
     "webpack-dev-middleware": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-md5-hash": "^0.0.6"
-  }
+  },
+  "dependencies": {}
 }
