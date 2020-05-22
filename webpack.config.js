@@ -2,7 +2,8 @@ const path = require("path");
 
 module.exports = {
   mode:"development",
-  entry: path.resolve(__dirname, "src", "app"),
+  devtool: "source-map",
+  entry: path.resolve(__dirname, "src", "client"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -13,14 +14,28 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000
   },
   module: {
     rules: [{
+      test: /\.ts(x?)$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: "ts-loader"
+        }
+      ]
+    },{
       test: /\.jsx?/,
-      loader: 'babel-loader'
+      loader: "babel-loader"
+    },
+    {
+      enforce: "pre",
+      test: /\.js$/,
+      loader: "source-map-loader"
     }]
+  },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
   }
 }
