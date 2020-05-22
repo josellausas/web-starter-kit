@@ -4,6 +4,7 @@
     "target": "es5",
     "module": "es6",
     "outDir": "../build/client",
-    "composite": true
+    "composite": true,
+    "strictNullChecks": false
   }
 }
