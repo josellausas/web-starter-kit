@@ -12,7 +12,8 @@
     "build": "tsc --build",
     "build-server": "tsc -p server",
     "build-client": "tsc -p src",
-    "debug": "node --inspect=9227 build/server/server.js"
+    "debug": "node --inspect=9227 build/server/server.js",
+    "lint": "eslint server/*.ts"
   },
   "quokka": {
     "babel": {
