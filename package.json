@@ -1,14 +1,13 @@
 {
   "name": "web-starter-kit",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/server.js",
   "repository": "https://github.com/josellausas/web-starter-kit.git",
   "author": "zunware <jose@josellausas.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "server": "node buildScripts/srcServer.js",
-    "start": "webpack",
+    "server": "node build/server.js",
     "pack": "webpack --config webpack.config.js",
     "build": "tsc"
   },
