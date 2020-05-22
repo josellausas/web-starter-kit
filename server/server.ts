@@ -7,6 +7,14 @@ const questions : Question[] = [{
   title: "How to log in?",
   content: "Quesito plz plz",
   answerCount: 2
+},{
+  title: "What is going on?",
+  content: "yeah, this is a common question, hope it goes well...",
+  answerCount: 2
+},{
+  title: "Is TypeScript EZ?",
+  content: "Who can say? I dunno",
+  answerCount: 2
 }];
 
 const port : string | number = process.env.port || 1337;

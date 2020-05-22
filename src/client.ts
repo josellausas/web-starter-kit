@@ -21,7 +21,7 @@ import { Question } from "../@types/Question";
       `
     ).join("");
   }
-  
+
   async function init() : Promise<void> {
     const request = await fetch("/questions");
     questions = await request.json();
