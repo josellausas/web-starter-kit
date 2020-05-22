@@ -9,7 +9,7 @@
   "scripts": {
     "server": "node build/server.js",
     "pack": "webpack --config webpack.config.js",
-    "build": "tsc"
+    "build": "tsc --build"
   },
   "quokka": {
     "babel": {

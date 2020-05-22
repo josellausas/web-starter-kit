@@ -13,6 +13,7 @@ Uses technologies like
 - Typescript
 
 ## Resources
+- Pluralsight class "Configuring, Compiling, and Debugging TypeScript Projects"
 - Pluralsight class "Building a JavaScript Development Environment"
 
 ```
