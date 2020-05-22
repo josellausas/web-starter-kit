@@ -1,7 +1,9 @@
 {
   "extends": "../tsconfig-base.json",
   "compilerOptions": {
-    "outDir": "../build/src",
+    "target": "es5",
+    "module": "es6",
+    "outDir": "../build/client",
     "composite": true
   }
 }

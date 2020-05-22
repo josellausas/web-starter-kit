@@ -1,4 +1,5 @@
 import * as express from "express";
+import * as path from "path";
 import { Question } from '../@types/Question';
 
 // Using imported interfaces
@@ -19,4 +20,8 @@ console.log(`Listening on port ${port}`);
 
 app.get("/questions", (_req, res) => {
   res.json(questions);
+});
+
+app.get("/main.js", (_req, res) => {
+  res.sendFile(path.resolve(__dirname, "..", "client", "client.js"))
 });
