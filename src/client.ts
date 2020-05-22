@@ -9,4 +9,6 @@ import { Question } from "../@types/Question";
     questions = await request.json();
     console.log(questions);
   }
+
+  init();
 })();
