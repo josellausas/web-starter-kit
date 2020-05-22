@@ -9,7 +9,7 @@ module.exports = {
     publicPath: "/dist"
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', 'ts', 'tsx']
   },
   devServer: {
     historyApiFallback: true,
