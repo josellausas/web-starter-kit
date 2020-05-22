@@ -1,6 +1,6 @@
 import * as express from "express";
 import * as path from "path";
-import { Question } from '../@types/Question';
+import { Question } from '../../@types/Question';
 
 // Using imported interfaces
 const questions : Question[] = [{
@@ -32,7 +32,7 @@ app.get("/questions", (_req, res) => {
 
 // Development version
 app.get("/main.js", (_req, res) => {
-  res.sendFile(path.resolve(__dirname, "..", "client", "client.js"))
+  res.sendFile(path.resolve(__dirname, "..", "client", "index.js"))
 });
 
 // Release version

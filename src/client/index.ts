@@ -1,4 +1,4 @@
-import { Question } from "../@types/Question";
+import { Question } from "../../@types/Question";
 
 // Give it its own context
 (() : void =>{

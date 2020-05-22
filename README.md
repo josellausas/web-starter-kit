@@ -11,6 +11,7 @@ Uses technologies like
 - Express
 - webpack
 - Typescript
+- Redux
 
 ## Resources
 - Pluralsight class "Configuring, Compiling, and Debugging TypeScript Projects"

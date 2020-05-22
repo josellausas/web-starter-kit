@@ -13,7 +13,7 @@
     "build-server": "tsc -p server",
     "build-client": "tsc -p src",
     "debug": "node --inspect=9227 build/server/server.js",
-    "lint": "eslint server/*.ts"
+    "lint": "eslint src/*.ts"
   },
   "quokka": {
     "babel": {
@@ -49,5 +49,7 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
 }
