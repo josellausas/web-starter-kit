@@ -15,3 +15,4 @@ Uses technologies like
 ## Resources
 - Pluralsight class "Configuring, Compiling, and Debugging TypeScript Projects"
 - Pluralsight class "Building a JavaScript Development Environment"
+- https://app.pluralsight.com/library/courses/react-express-full-stack-app-building
