@@ -7,9 +7,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "server": "node build/server.js",
+    "server": "node build/server/server.js",
     "pack": "webpack --config webpack.config.js",
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "build-server": "tsc -p server"
   },
   "quokka": {
     "babel": {
