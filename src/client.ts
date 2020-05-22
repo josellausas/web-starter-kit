@@ -28,5 +28,15 @@ import { Question } from "../@types/Question";
     console.log(questions);
     render();
   }
+
+  // async function handleSubmitQuestionForm () : Promise<void> {
+  //   event.preventDefault(); // Prevent the page from refreshing
+  //   const title : string = document.forms["QuestionForm" as any][0].value;
+  //   const content : string = document.forms["QuestionForm" as any][1].value;
+  //   const request = await fetch(`new?title=${title}&content=${content}`);
+  //   const json = await request.json();
+  //   questions = json.questions;
+  //   render();
+  // }
   init();
 })();
