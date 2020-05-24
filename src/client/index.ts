@@ -1,8 +1,7 @@
 import { Question } from "../../@types/Question";
+import { store } from './store';
 
 // Give it its own context
-(() : void =>{
-  
   let questions : Question[] = [];
 
   function render() : void {
@@ -23,6 +22,7 @@ import { Question } from "../../@types/Question";
   }
 
   async function init() : Promise<void> {
+    // console.log(store.getState());
     const request = await fetch("/questions");
     questions = await request.json();
     console.log(questions);
@@ -39,4 +39,4 @@ import { Question } from "../../@types/Question";
   //   render();
   // }
   init();
-})();
+

@@ -10,6 +10,7 @@
     "server": "node build/server/server.js",
     "distribute": "npx webpack --config webpack.config.js",
     "build": "tsc --build",
+    "watch": "tsc --build --watch",
     "build-server": "tsc -p server",
     "build-client": "tsc -p src",
     "debug": "node --inspect=9227 build/server/server.js",
