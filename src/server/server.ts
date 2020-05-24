@@ -30,11 +30,6 @@ app.get("/questions", (_req, res) => {
   res.json(questions);
 });
 
-// Development version
-app.get("/main.js", (_req, res) => {
-  res.sendFile(path.resolve(__dirname, "..", "client", "index.js"))
-});
-
 // Release version
 app.get("/bundle.js", (_req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "..", "dist", "bundle.js"))
