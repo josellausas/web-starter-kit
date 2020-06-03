@@ -10,7 +10,7 @@ import { store } from './store';
   let questions : Question[] = [];
   function render() : void {
     console.log(store.getState());
-    ReactDOM.render(<Questions data={questions} />, document.getElementById("Questions"));
+    // ReactDOM.render(<Questions data={questions} />, document.getElementById("Questions"));
     ReactDOM.render(<Dashboard/>, document.getElementById("app"));
   }
 
